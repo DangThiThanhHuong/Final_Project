@@ -17,6 +17,7 @@ public class Main extends Application {
 		var thread = new Thread(new Runnable() {
 			@Override
 			public void run() {
+				//master
 					s = new Socket();
 					try {
 						s.connect(new InetSocketAddress("localhost", 8189), 3000);
